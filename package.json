@@ -2,7 +2,7 @@
   "name": "a-developer-and-a-cat",
   "private": true,
   "description": "A Developer, and a Cat",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Alex Yu <cw.yu.alex@gmail.com>",
   "dependencies": {
     "gatsby": "^2.13.73",
