@@ -56,7 +56,6 @@ const Bio = () => {
 			/>
 			<p>
 				Written by <strong>{author}</strong> who lives and works in Taipei, Taiwan building useful things.
-				</a>
 			</p>
 		</div>
 	);
