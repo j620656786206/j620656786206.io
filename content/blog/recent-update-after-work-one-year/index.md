@@ -1,7 +1,7 @@
 ---
 title:  工作一年後近況更新
 date: "2019-09-03"
-description: "recent update after work one year"
+description: "趁著工作即將屆滿一年來記錄一下自己在這一年做了些什麼，及學了哪些東西。"
 ---
 
 # 近況
