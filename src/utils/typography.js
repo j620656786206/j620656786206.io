@@ -9,7 +9,20 @@ Wordpress2016.overrideThemeStyles = () => {
 	};
 };
 
-delete Wordpress2016.googleFonts;
+Wordpress2016.headerFontFamily = ['Noto Serif TC', 'sans-serif'];
+Wordpress2016.bodyFontFamily = ['Noto Serif TC', 'sans-serif'];
+Wordpress2016.googleFonts = [
+	{
+		name: 'Noto Serif TC',
+		styles: [
+			"400",
+			"500",
+			"600",
+			"700",
+			"900",
+		]
+	}
+];
 
 const typography = new Typography(Wordpress2016);
 
