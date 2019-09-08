@@ -1,6 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[A Developer, and a Cat]]></title><description><![CDATA[A software engineer who love to code.]]></description><link>https://j620656786206-io.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 08 Sep 2019 07:31:01 GMT</lastBuildDate><item><title><![CDATA[使用Goolg fonts]]></title><description><![CDATA[Typography 一開始打完第一篇的時候, 發現字體看了不是很順眼. 由於沒有用過Typography, 所以不是很確定如何更換字體, google了一下發現有人說在加上google font的url並且在html加上font-family屬性[…]]></description><link>https://j620656786206-io.netlify.com/update-font/</link><guid isPermaLink="false">https://j620656786206-io.netlify.com/update-font/</guid><pubDate>Sun, 08 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;Typography&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[A Developer, and a Cat]]></title><description><![CDATA[A software engineer who love to code.]]></description><link>https://j620656786206-io.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 08 Sep 2019 07:57:51 GMT</lastBuildDate><item><title><![CDATA[使用Goolg fonts]]></title><description><![CDATA[Typography 一開始打完第一篇的時候, 發現字體看了不是很順眼. 由於沒有用過Typography, 所以不是很確定如何更換字體, google了一下發現有人說在加上google font的url並且在html加上font-family屬性[…]]></description><link>https://j620656786206-io.netlify.com/update-font/</link><guid isPermaLink="false">https://j620656786206-io.netlify.com/update-font/</guid><pubDate>Sun, 08 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;Typography&lt;/h3&gt;
 &lt;p&gt;一開始打完第一篇的時候, 發現字體看了不是很順眼. 由於沒有用過Typography, 所以不是很確定如何更換字體, google了一下發現有人說在&lt;code class=&quot;language-text&quot;&gt;layout.css&lt;/code&gt;加上google font的url並且在html加上font-family屬性&lt;a href=&quot;https://stackoverflow.com/questions/47488440/how-do-i-add-google-fonts-to-a-gatsby-site&quot;&gt;[1]&lt;/a&gt;, 不過我試了發現沒有用,
-&lt;img src=&quot;./html_css.png&quot;&gt;&lt;/p&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 35.7037037037037%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAAA7ElEQVQoz5WRjW6EIBCEef83bGp7NukpeqCgKFJ/prM2XmzSu6QkX5bA7rDsqDzPcdUlTGXQWY8YR4zjD8Mw3Pcj9yGEp/R9D6WLAoGCjbGwpoHzHk3bEoeBQs55+K5jcsCyLNi27U9kzfMMFbwDWJCcQ88oxTFO+6UISNx5InYWVW8fBTp288UvpWlCTAkj45FwLljX9SFyn1irsiKifMlgs1dUF87z/QJNKl0h8JH/LnWzLc1oEGXwHGzkYAUZ8DSl+7clnjnOpCvJPYxRraUZ108YmlKyK13X0FWNur79cvwRIuJpZLcb1+Mb/Nge+Hzz1zcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;html css&quot;
+        title=&quot;html css&quot;
+        src=&quot;/static/96f1a3d89561bf5bce0e85eb71639b11/b9e4f/html-css.png&quot;
+        srcset=&quot;/static/96f1a3d89561bf5bce0e85eb71639b11/cf440/html-css.png 148w,
+/static/96f1a3d89561bf5bce0e85eb71639b11/d2d38/html-css.png 295w,
+/static/96f1a3d89561bf5bce0e85eb71639b11/b9e4f/html-css.png 590w,
+/static/96f1a3d89561bf5bce0e85eb71639b11/f9b6a/html-css.png 885w,
+/static/96f1a3d89561bf5bce0e85eb71639b11/2d849/html-css.png 1180w,
+/static/96f1a3d89561bf5bce0e85eb71639b11/8013a/html-css.png 1350w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;我猜原因是在&lt;code class=&quot;language-text&quot;&gt;layout.js&lt;/code&gt;裡面有設定了&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;h3
 	style={{
@@ -153,6 +175,9 @@ Wordpress2016.googleFonts = [
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;後續&lt;/h3&gt;
+&lt;p&gt;之後會再將字體下載下來放到font資料夾, 以加快整體網頁的讀取速度, 以及文章內加入&lt;code class=&quot;language-text&quot;&gt;hightlight.js&lt;/code&gt;.&lt;/p&gt;
 &lt;h3&gt;Reference&lt;/h3&gt;
 &lt;p&gt;[1] &lt;a href=&quot;https://stackoverflow.com/questions/47488440/how-do-i-add-google-fonts-to-a-gatsby-site&quot;&gt;https://stackoverflow.com/questions/47488440/how-do-i-add-google-fonts-to-a-gatsby-site&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;[2] &lt;a href=&quot;https://kyleamathews.github.io/typography.js/&quot;&gt;https://kyleamathews.github.io/typography.js/&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[工作一年後近況更新]]></title><description><![CDATA[近況 趁著工作即將屆滿一年來記錄一下自己在這一年做了些什麼，及學了哪些東西。 React Native 一開始應徵的職位雖然是前端工程師，不過並不知道自己會被分配到寫手機的APP。雖然有從udemy上學過react native的課程，不過課堂內所做過的side projects…]]></description><link>https://j620656786206-io.netlify.com/recent-update-after-work-one-year/</link><guid isPermaLink="false">https://j620656786206-io.netlify.com/recent-update-after-work-one-year/</guid><pubDate>Tue, 03 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;近況&lt;/h1&gt;
