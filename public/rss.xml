@@ -1,4 +1,161 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[A Developer, and a Cat]]></title><description><![CDATA[A software engineer who love to code.]]></description><link>https://j620656786206-io.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 02 Sep 2019 17:17:52 GMT</lastBuildDate><item><title><![CDATA[工作一年後近況更新]]></title><description><![CDATA[近況 趁著工作即將屆滿一年來記錄一下自己在這一年做了些什麼，及學了哪些東西。 React Native 一開始應徵的職位雖然是前端工程師，不過並不知道自己會被分配到寫手機的APP。雖然有從udemy上學過react native的課程，不過課堂內所做過的side projects…]]></description><link>https://j620656786206-io.netlify.com/recent-update-after-work-one-year/</link><guid isPermaLink="false">https://j620656786206-io.netlify.com/recent-update-after-work-one-year/</guid><pubDate>Tue, 03 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;近況&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[A Developer, and a Cat]]></title><description><![CDATA[A software engineer who love to code.]]></description><link>https://j620656786206-io.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 08 Sep 2019 07:31:01 GMT</lastBuildDate><item><title><![CDATA[使用Goolg fonts]]></title><description><![CDATA[Typography 一開始打完第一篇的時候, 發現字體看了不是很順眼. 由於沒有用過Typography, 所以不是很確定如何更換字體, google了一下發現有人說在加上google font的url並且在html加上font-family屬性[…]]></description><link>https://j620656786206-io.netlify.com/update-font/</link><guid isPermaLink="false">https://j620656786206-io.netlify.com/update-font/</guid><pubDate>Sun, 08 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;Typography&lt;/h3&gt;
+&lt;p&gt;一開始打完第一篇的時候, 發現字體看了不是很順眼. 由於沒有用過Typography, 所以不是很確定如何更換字體, google了一下發現有人說在&lt;code class=&quot;language-text&quot;&gt;layout.css&lt;/code&gt;加上google font的url並且在html加上font-family屬性&lt;a href=&quot;https://stackoverflow.com/questions/47488440/how-do-i-add-google-fonts-to-a-gatsby-site&quot;&gt;[1]&lt;/a&gt;, 不過我試了發現沒有用,
+&lt;img src=&quot;./html_css.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;我猜原因是在&lt;code class=&quot;language-text&quot;&gt;layout.js&lt;/code&gt;裡面有設定了&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;h3
+	style={{
+		fontFamily: `Montserrat, sans-serif`,
+			marginTop: 0,
+		}}
+	&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;而且我不是很喜歡在這種直接在css裡面設定style的做法.&lt;/p&gt;
+&lt;p&gt;所以我便看了一下Typography.js的官方文件, 有寫著&lt;code class=&quot;language-text&quot;&gt;googleFonts&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;headerFontFamily&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;bodyFontFamily&lt;/code&gt;的設定&lt;a href=&quot;https://kyleamathews.github.io/typography.js/&quot;&gt;[2]&lt;/a&gt;, 於是便在&lt;code class=&quot;language-text&quot;&gt;src/utils/typography.js&lt;/code&gt;裡面加上&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Wordpress2016.headerFontFamily = [&amp;#39;Noto Serif TC&amp;#39;, &amp;#39;sans-serif&amp;#39;];
+Wordpress2016.bodyFontFamily = [&amp;#39;Noto Serif TC&amp;#39;, &amp;#39;sans-serif&amp;#39;];
+Wordpress2016.googleFonts = [
+	{
+		name: &amp;#39;Noto Serif TC&amp;#39;,
+		styles: [
+			&amp;quot;400&amp;quot;,
+			&amp;quot;500&amp;quot;,
+			&amp;quot;600&amp;quot;,
+			&amp;quot;700&amp;quot;,
+			&amp;quot;900&amp;quot;,
+		]
+	}
+];&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;便更改成功了,&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;before&lt;/em&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5a7f01ad58444cff961cc8f87d4db7ae/ff64a/homepage-before.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 49.408284023668635%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAABOklEQVQoz51SyW6DQAzNl/cLeuvncEHhQE6RUhW60KaBYQdB2Kbsr4yb0BxSiXSkJ7+xrTce26soiqFuNlAUBZIkQZZlaJoGVVWx2+2wXq+RpimWnHEcsWqbGq61R5ZlKIoCeZ4TPx6PM+ecE6qqugqR1/c9ia489oH7uwc8P73j9e0Fuq7DMAy4rosgCBCGIXzfh+d55BP3s3Uch2KWZaGu6x/Bpmng2snkaKaqUqqsLEv859CX/wr2w0AJSzCccqnCSRe/uP7qEswVNv2IfdIi5j22Dsejx7G1S2g+v0lsFiwqDsN0EEzr8+nGYHGB5GtEXg839W7+stgxZplgjMGYppzEIeIwgM1MWiMxXTHJKIpougJnfjgcYNv2vDJUoWiocAi0XUe2m2zbdtRswbuT/xy75AKXPfwG/JEDwSPDQ3wAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;homepage before&quot;
+        title=&quot;homepage before&quot;
+        src=&quot;/static/5a7f01ad58444cff961cc8f87d4db7ae/b9e4f/homepage-before.png&quot;
+        srcset=&quot;/static/5a7f01ad58444cff961cc8f87d4db7ae/cf440/homepage-before.png 148w,
+/static/5a7f01ad58444cff961cc8f87d4db7ae/d2d38/homepage-before.png 295w,
+/static/5a7f01ad58444cff961cc8f87d4db7ae/b9e4f/homepage-before.png 590w,
+/static/5a7f01ad58444cff961cc8f87d4db7ae/f9b6a/homepage-before.png 885w,
+/static/5a7f01ad58444cff961cc8f87d4db7ae/2d849/homepage-before.png 1180w,
+/static/5a7f01ad58444cff961cc8f87d4db7ae/ff64a/homepage-before.png 1352w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;after&lt;/em&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d18d2ffd40d5422d7e55fd534a52af35/50151/homepage-after.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 78.90044576523032%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAABzUlEQVQ4y5VTy27bQAzU/39CgZ5z7KHnAvEhruHEqI24rg9F6kqCLNl67urtlaYkG7kJ4iKyAIoUdzXkziytpmmwWCwwm80wnU4xmUyw2Wwwn8+xWq2wXC6x3W7BT9/3eO+xjOmQJhGi6ADfD+C6Lo7HI8U+wjAUS5JEwIwx6LrujQ159hbVxc2Hj7j7co9UJYijmMAjAYrjGFmWIU1T+eZCnONivIe/Oe95nsRsAnh3+4Cf2z1C6lIpLd1c6oTzw9qlPZyzLtHCuffZ+g+HzxAXF0WE567GmnXqeqz9Cru4wV61Yl7WQNfmlbJjFJYOG1L5668U31yFB1vhu1/iMagRFt0ZaCyYAHadgWfv4Dk7+K5N/jcKUlulyVmgqzrkjVVV0c8KRZ6jLHLkWpMpypfXA/KrMT0aOmF56qHbXnxOvuv/CjZGjKGoXJs18fYU1bh3CnxaJ5g8aXz+kSEqzWjuBlCLx8W2bezptvPYHQ4H1HUtFPCcc1yWpdDCvigKidk41kRP27b/OmTAYZQcx5FYZSk81yGfyahxkcEHQXAeTd7L/zDoiyMTXyQGV+MOOM4qA326bkLOR+aAj8dV2LOFmu5h3tJ8jp+QAfQPU5jbDnlAWYMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;homepage after&quot;
+        title=&quot;homepage after&quot;
+        src=&quot;/static/d18d2ffd40d5422d7e55fd534a52af35/b9e4f/homepage-after.png&quot;
+        srcset=&quot;/static/d18d2ffd40d5422d7e55fd534a52af35/cf440/homepage-after.png 148w,
+/static/d18d2ffd40d5422d7e55fd534a52af35/d2d38/homepage-after.png 295w,
+/static/d18d2ffd40d5422d7e55fd534a52af35/b9e4f/homepage-after.png 590w,
+/static/d18d2ffd40d5422d7e55fd534a52af35/f9b6a/homepage-after.png 885w,
+/static/d18d2ffd40d5422d7e55fd534a52af35/2d849/homepage-after.png 1180w,
+/static/d18d2ffd40d5422d7e55fd534a52af35/50151/homepage-after.png 1346w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;before&lt;/em&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/613e770463b2fd25cee3be917f70fe55/91670/blog-before.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 95.84615384615385%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABYlAAAWJQFJUiTwAAACGUlEQVQ4y62UyaoiQRBF6+td+wG6ciG4c6Wg6EJw40pxnst5Hp+vwOl2nYSUani2Dd0JQaRpZNTJG5HpNJtN5fN5FYtFpVIplUol1Wo15XI5tdttFQoFeZ4nO57Pp/40nPP5rPl8rsViocPhoNlsps1mo+VyaTzGOnG32+1jUqfb7SqdThui1WqlRCKhaDSqSCSiZDKpeDyucDisUCikTqdjNj0ej/cJB4OB6vW6JpOJoTsej1qv15pOp4aOOfT46/X6mTCozf1+16fxUcPL5WKorPBswDjWT/N3Zvc6mUxGsVhM2Wz2rwg+kTun00nb7VaQfqIIGtRB8hch7UF1R6ORer2eKQRzCmTbiIIQR3vZYrE+HA5NbLBYzk/4FMd+3ZK8M2J/I3Rd13wVT59BEyxOUJ+gD2odlML0Ic0NPv1I8n8ZDteJxqWx0RJtxuOx0SuoIzF4tOQ09iIAZP/b7/dyICpXKmq1WuKhKJfLhpiHgUeCzXyAdf6v+LGsE4NExLGGnf2O8R+H0+tLttI22FIyx/f7fZMAzxqxI3codzJXb/0l73qTMzt4crff6iyOas2Pmqz2/qaWGo2GIWITx+MkkJEMq1ar5lSADHz9e/4aL5IDFcdyfc/R+G37EA8lOpKEzbvdzvTheDx56Ujcl5/MFIV7jJj/a5irZ6uLt0blqChHhZI5PQrtwQdYHr61PXtaLRcih23yX3CroPRIfDMeAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;blog before&quot;
+        title=&quot;blog before&quot;
+        src=&quot;/static/613e770463b2fd25cee3be917f70fe55/b9e4f/blog-before.png&quot;
+        srcset=&quot;/static/613e770463b2fd25cee3be917f70fe55/cf440/blog-before.png 148w,
+/static/613e770463b2fd25cee3be917f70fe55/d2d38/blog-before.png 295w,
+/static/613e770463b2fd25cee3be917f70fe55/b9e4f/blog-before.png 590w,
+/static/613e770463b2fd25cee3be917f70fe55/f9b6a/blog-before.png 885w,
+/static/613e770463b2fd25cee3be917f70fe55/2d849/blog-before.png 1180w,
+/static/613e770463b2fd25cee3be917f70fe55/91670/blog-before.png 1300w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;after&lt;/em&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b3215be3c3e95227fe6ba145f50936ca/d7a69/blog-after.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 90.37356321839081%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAABYlAAAWJQFJUiTwAAACEklEQVQ4y51Uya6qQBD1/z/BjYmu3bhw70aNxoVxVhwAEQQUFefp3D51H8RnfI+bS1J0V3fVqblTp9MJ1WoV9XodpVJJaDQaodFooN1uy/ntdkP0PZ9P/O9LUdiyLIzHY2w2G+i6juFwiMlkIvvBYIB+v49utwsaTwJNUahWq6FQKMA0TfE2l8shm82iWCwin88jk8kgnU5jvV4nA16vVyyXS2y3W+x2O5B/De9dOTHk94NPCtHZ+/oR8HA4SCHK5bJ4yO/xeMTe/YReoxHASqUieTwej/jN9+qxVDkIAskhq+37vpDrutjv91itVlJ9rp7nSWEoT5nFYhFHFXt4v9+lHc7nswBcLhfh6TmN8Yw8iRFEstwTjPu/AKnECyqGYSj7pEp+CjnSSdESm5ZNzAkh0evf5lLahnlhU9u2HRNzGPVntOfqOI4QZZhD7qnP/MZF4ajRM45fq9XCbDaDYRgydjTEMeRcU+71nlGR5x0NxIBL18NMXRrmXK1GDE6PuBJgPp8LIHmCUV7nuePBXB9w+lOc1Pl6x9QLodkBOrqLkeVD0zT0ej10Oh1RZmj0ko8EPabBZrP5bVida+OJtNU3oEKmJV/lwFMeyaoo6j1Wni3EXJGnPPMa9STPdoqPi8JfGO7/Wdn3ByLxcWCjMj90n2FFRZhOp0IsDHkS5RyVfEfl3AqOsBa2pIRe85XiUHwBZZ5ajPWgjeYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;blog after&quot;
+        title=&quot;blog after&quot;
+        src=&quot;/static/b3215be3c3e95227fe6ba145f50936ca/b9e4f/blog-after.png&quot;
+        srcset=&quot;/static/b3215be3c3e95227fe6ba145f50936ca/cf440/blog-after.png 148w,
+/static/b3215be3c3e95227fe6ba145f50936ca/d2d38/blog-after.png 295w,
+/static/b3215be3c3e95227fe6ba145f50936ca/b9e4f/blog-after.png 590w,
+/static/b3215be3c3e95227fe6ba145f50936ca/f9b6a/blog-after.png 885w,
+/static/b3215be3c3e95227fe6ba145f50936ca/2d849/blog-after.png 1180w,
+/static/b3215be3c3e95227fe6ba145f50936ca/d7a69/blog-after.png 1392w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;Reference&lt;/h3&gt;
+&lt;p&gt;[1] &lt;a href=&quot;https://stackoverflow.com/questions/47488440/how-do-i-add-google-fonts-to-a-gatsby-site&quot;&gt;https://stackoverflow.com/questions/47488440/how-do-i-add-google-fonts-to-a-gatsby-site&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[2] &lt;a href=&quot;https://kyleamathews.github.io/typography.js/&quot;&gt;https://kyleamathews.github.io/typography.js/&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[工作一年後近況更新]]></title><description><![CDATA[近況 趁著工作即將屆滿一年來記錄一下自己在這一年做了些什麼，及學了哪些東西。 React Native 一開始應徵的職位雖然是前端工程師，不過並不知道自己會被分配到寫手機的APP。雖然有從udemy上學過react native的課程，不過課堂內所做過的side projects…]]></description><link>https://j620656786206-io.netlify.com/recent-update-after-work-one-year/</link><guid isPermaLink="false">https://j620656786206-io.netlify.com/recent-update-after-work-one-year/</guid><pubDate>Tue, 03 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;近況&lt;/h1&gt;
 &lt;p&gt;趁著工作即將屆滿一年來記錄一下自己在這一年做了些什麼，及學了哪些東西。&lt;/p&gt;
 &lt;h3&gt;React Native&lt;/h3&gt;
 &lt;p&gt;一開始應徵的職位雖然是前端工程師，不過並不知道自己會被分配到寫手機的APP。雖然有從udemy上學過react native的課程，不過課堂內所做過的side projects架構跟實際工作上碰到的專案架構差距滿大的。首先我們公司專案用到的navigation套件是 &lt;a href=&quot;https://github.com/wix/react-native-navigation&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;react-native-navigation&lt;/code&gt;&lt;/a&gt;, 不過我們專案裡有多加了一個設定檔去定義每個頁面中包含了哪些子頁面，每個頁面會定義著頁面名稱name，頁面種類type，以及所要導向的目標頁面target。&lt;/p&gt;
@@ -7,5 +164,4 @@
 &lt;p&gt;後來因應新增加的功能，我則是自己使用了&lt;a href=&quot;https://github.com/Gil2015/react-native-table-component#readme&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;react-native-table-component&lt;/code&gt;&lt;/a&gt;以及&lt;a href=&quot;https://github.com/react-native-community/react-native-svg&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;react-native-svg&lt;/code&gt;&lt;/a&gt;處理表格與canvas。&lt;/p&gt;
 &lt;p&gt;前半年除了這些工具之外，自己在程式寫法上也改了很多地方，舉凡component的interface定義以及props跟state設計上也都學了不少。&lt;/p&gt;
 &lt;h3&gt;Backend&lt;/h3&gt;
-&lt;p&gt;手機專案完成了之後我便轉到後端，目前也還是在學習的狀況。舉凡&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Nodejs&lt;/code&gt;&lt;/a&gt;，&lt;a href=&quot;https://expressjs.com/&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;express&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://www.mongodb.com/&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;MongoDB&lt;/code&gt;&lt;/a&gt;，資料庫，資料結構設計，API設計，cache和session，驗證和授權等等，後端有太多東西所以目前也還是只能慢慢一點一點慢慢摸索…&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new gatsby blog! How exciting! I’m sure I’ll write a lot more interesting things in the future.]]></description><link>https://j620656786206-io.netlify.com/hello-world/</link><guid isPermaLink="false">https://j620656786206-io.netlify.com/hello-world/</guid><pubDate>Fri, 30 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new gatsby blog! How exciting!&lt;/p&gt;
-&lt;p&gt;I’m sure I’ll write a lot more interesting things in the future.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;手機專案完成了之後我便轉到後端，目前也還是在學習的狀況。舉凡&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Nodejs&lt;/code&gt;&lt;/a&gt;，&lt;a href=&quot;https://expressjs.com/&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;express&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://www.mongodb.com/&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;MongoDB&lt;/code&gt;&lt;/a&gt;，資料庫，資料結構設計，API設計，cache和session，驗證和授權等等，後端有太多東西所以目前也還是只能慢慢一點一點慢慢摸索…&lt;/p&gt;</content:encoded></item></channel></rss>
