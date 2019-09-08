@@ -6,7 +6,7 @@ description: "在Typography使用Goolg fonts"
 
 ### Typography
 一開始打完第一篇的時候, 發現字體看了不是很順眼. 由於沒有用過Typography, 所以不是很確定如何更換字體, google了一下發現有人說在`layout.css`加上google font的url並且在html加上font-family屬性[[1]](https://stackoverflow.com/questions/47488440/how-do-i-add-google-fonts-to-a-gatsby-site), 不過我試了發現沒有用,
-![](./html_css.png)
+![](./html-css.png)
 
 我猜原因是在`layout.js`裡面有設定了
 ```
